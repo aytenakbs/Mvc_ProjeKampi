@@ -10,5 +10,12 @@ namespace BusinessLayer.Validations
 {
     public class CategoryValidator:AbstractValidator<Category>
     {
+        public CategoryValidator()
+        {
+                RuleFor(x=>x.CategoryName).NotEmpty().WithMessage("Kategori alanı boş geçilemez.");
+                RuleFor(x=>x.CategoryDescription).NotEmpty().WithMessage("Kategori açıklaması boş geçilemez.");
+                RuleFor(x=>x.CategoryName).MinimumLength(3).WithMessage("Kategori adı en az 3 karakterden oluşmalıdır.");
+                RuleFor(x=>x.CategoryName).MaximumLength(30).WithMessage("Kategori adı en fazla 30 karakterden oluşmalıdır.");
+        }
     }
 }
