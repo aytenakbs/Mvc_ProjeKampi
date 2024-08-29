@@ -20,18 +20,28 @@ namespace DataAccessLayer.Concrete.Repositories
             c.SaveChanges();
         }
 
+        public Category Get(Expression<Func<Category, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);
+        }
+
+        public List<Category> GetList(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Insert(Category p)
         {
             _object.Add(p);
             c.SaveChanges();
         }
 
-        public List<Category> List()
+        public List<Category> List(Expression<Func<Category, bool>> filter)
         {
             return _object.ToList();
         }
 
-        public List<Category> List(Expression<Func<Category, bool>> filter)
+        public List<Category> List()
         {
             throw new NotImplementedException();
         }
