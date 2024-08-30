@@ -68,6 +68,14 @@
     <Compile Include="EntityFramework\EFContentDal.cs" />
     <Compile Include="EntityFramework\EFHeadingDal.cs" />
     <Compile Include="EntityFramework\EFWriterDal.cs" />
+    <Compile Include="Migrations\202408291543256_writerupdated.cs" />
+    <Compile Include="Migrations\202408291543256_writerupdated.designer.cs">
+      <DependentUpon>202408291543256_writerupdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408301423139_mig_writertable_updated.cs" />
+    <Compile Include="Migrations\202408301423139_mig_writertable_updated.designer.cs">
+      <DependentUpon>202408301423139_mig_writertable_updated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,7 +89,14 @@
       <Name>EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202408291543256_writerupdated.resx">
+      <DependentUpon>202408291543256_writerupdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408301423139_mig_writertable_updated.resx">
+      <DependentUpon>202408301423139_mig_writertable_updated.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
