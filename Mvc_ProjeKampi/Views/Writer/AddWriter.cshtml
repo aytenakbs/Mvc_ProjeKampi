@@ -28,6 +28,10 @@
         @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })
         @Html.ValidationMessageFor(x => x.WriterImage)
         <br />
+        @Html.Label("Ünvan/Başlık")
+        @Html.TextBoxFor(x => x.WriterTitle, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.WriterTitle)
+        <br />
         @Html.Label("Hakkımda")
         @Html.TextBoxFor(x => x.AboutWriter, new { @class = "form-control" })
         @Html.ValidationMessageFor(x => x.AboutWriter)
