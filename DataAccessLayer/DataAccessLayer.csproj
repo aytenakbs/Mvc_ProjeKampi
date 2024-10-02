@@ -76,6 +76,14 @@
     <Compile Include="Migrations\202408301423139_mig_writertable_updated.designer.cs">
       <DependentUpon>202408301423139_mig_writertable_updated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202410011011283_mig_writer_addstatus.cs" />
+    <Compile Include="Migrations\202410011011283_mig_writer_addstatus.designer.cs">
+      <DependentUpon>202410011011283_mig_writer_addstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202410011341224_mig_contentstatusupdate.cs" />
+    <Compile Include="Migrations\202410011341224_mig_contentstatusupdate.designer.cs">
+      <DependentUpon>202410011341224_mig_contentstatusupdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -95,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202408301423139_mig_writertable_updated.resx">
       <DependentUpon>202408301423139_mig_writertable_updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410011011283_mig_writer_addstatus.resx">
+      <DependentUpon>202410011011283_mig_writer_addstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410011341224_mig_contentstatusupdate.resx">
+      <DependentUpon>202410011341224_mig_contentstatusupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -47,6 +47,7 @@ namespace Mvc_ProjeKampi.Controllers
             hm.HeadingAdd(heading);
             return RedirectToAction("index");
         }
+        
 
     }
 }

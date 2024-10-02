@@ -31,10 +31,6 @@ namespace DataAccessLayer.Concrete.Repositories
             return _object.SingleOrDefault(filter);
         }
 
-        public List<T> GetList(Expression<Func<T, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
 
         public void Insert(T p)
         {

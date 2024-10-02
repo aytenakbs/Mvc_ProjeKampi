@@ -18,5 +18,6 @@ namespace EntityLayer.Concrete
         public virtual Heading Heading { get; set; }
         public int? WriterId { get; set; }
         public virtual Writer Writer { get; set; }
+        public bool ContentStatus { get; set; }
     }
 }

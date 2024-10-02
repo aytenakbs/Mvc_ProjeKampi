@@ -11,6 +11,7 @@ namespace DataAccessLayer.Abstract
     public interface IGenericRepository<T>
     {
         List<T> List();
+        List<T> List(Expression<Func<T, bool>> filter);
         void Insert(T p);
         T Get(Expression<Func<T, bool>> filter);
         void Update(T p);
